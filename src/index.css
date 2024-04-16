@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins";
+  background: var(--secondary);
+}
+* {
+  color: #fff;
+  margin: 0;
+}
+p {
+  margin: 20px 0;
+}
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav .links{
+    display: flex;
+    gap: 20px;
+}
+header a{
+    text-decoration: none;
+    background: var(--secondary);
+    padding: 8px;
+    border-radius: 4px;
+    
+}
+header a.active{
+    background-color: var(--primary);
+}
+
+main{
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* page content */
+
+
+/* help layout */
+
+/* contact */
+.contact form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+    margin: 0px auto;
+    
+}
+form input, form label span, form textarea {
+    display: block;
+}
+form input, form textarea {
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0;
+    width: 300px;
+    color: var(--secondary);
+}
+.contact button{
+    max-width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    min-width: 200px;
+}
+
+/* faq */
+.faq .question {
+    background: rgba(0,0,0,0.2);
+    padding: 5px 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+
+.help-layout nav a.active {
+    background: var(--primary);
+
+}
+.help-layout nav a{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .help-layout nav a:hover{
+    border-color: var(--primary);
+  }
+
+
+/* careers list */
+.careers > a {
+    display: block;
+    background: rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+    text-decoration: none;
+  }
+.careers > a:hover h3 ,.careers > a:hover p{
+    color: var(--primary);
+}
+
+/* careers details */
+.career-details{
+    display: block;
+    background: rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+/* breadcrumbs */
